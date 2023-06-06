@@ -36,3 +36,71 @@
     transform: rotate(360deg);
   }
 }
+
+
+.task-container {
+  border: 2px solid gainsboro;
+  width: max-content;
+  margin: auto;
+  padding: 1rem;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task {
+  border: 1px solid gainsboro;
+  padding: 10px;
+}
+
+.task-input {
+  padding: 5px;
+  font-size: 1.05rem;
+}
+
+
+.create-task-btn {
+  padding: 5px;
+  font-size: 1.05rem;
+}
+
+
+.create-task-form {
+  display: flex;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+  border-top:  1px solid gainsboro;
+  padding-top: 10px;
+  
+
+  
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: max-content;
+  margin: auto;
+}
+
+
+.login-form div {
+  display: grid;
+  grid-template-columns:  100px 200px;
+}
+
+.login-form div input{
+  padding: 5px;
+}
+
+.login-btn {
+  width: fit-content;
+  margin: auto;
+  padding:10px;
+}
+
