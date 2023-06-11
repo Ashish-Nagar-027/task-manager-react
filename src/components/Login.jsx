@@ -4,14 +4,15 @@ import {  useNavigate } from "react-router-dom";
 
 const Login = ({ user,setUser }) => {
   const [loginFormData, setLoginFormData] = useState({
-    password:'cityslicka',
-    email:'eve.holt@reqres.in'
+    password:'',
+    email:''
   });
+
+//  password:'cityslicka',
+// email:'eve.holt@reqres.in'
 
   function handleChange(e) {
     setLoginFormData({ ...loginFormData, [e.target.name]: e.target.value });
-    alert(` please don't chagne user , ReqRes login only supports specific user
-    so just click on login `)
   }
 
   const handleSubmit = (e) => {
@@ -49,6 +50,10 @@ const Login = ({ user,setUser }) => {
           <input type="password" value={loginFormData.password} name="password" onChange={handleChange} />
         </div>
         <button className="login-btn">Login</button>
+       <p>note = Use 
+        email : eve.holt@reqres.in <br and />
+        password : cityslicka
+        </p>
         <h4>click on login button</h4>
       </form>
     </div>
